@@ -1,5 +1,5 @@
 # buscador
-Buscador: Java + Lucene + PHP
+Buscador: Java + Lucene + Tika + PHP
 
 # TODO
 * Listado de archivos (listado -d /dir/ -l lX.tsv )
