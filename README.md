@@ -10,7 +10,14 @@ Buscador: Java + Lucene + Tika + PHP
 
 # Estado
 funcionalidad: 80%
+## Lo Bueno
+* Funciona: busca en indice
+* Ya tiene un port a webservice basico (PHP+Java)
+
+## Lo Malo
 * Buscar en indice lucene antiguo
+* proceso de indexacion completamente manual
+* nula automatizacion de actualizaciones
 
 
 # Ideas varias
