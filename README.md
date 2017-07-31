@@ -14,6 +14,7 @@ Buscador: Java + Lucene + Tika + PHP
 - diferencias de archivos (diferencia -1 l1.tsv -2 l2.tsv -3 l3.tsv)
 - extraccion de datos para Lucene (extraccion -l l3.tsv)
 - busqueda (buscar -d /dir-lucene/ -b [palabras busqueda base64])
+ - Mas funciones por crear...
 
 
 # Estado
