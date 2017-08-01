@@ -1,9 +1,8 @@
 import java.io.File;
-//import org.apache.commons.cli.ParseException;
 import org.apache.commons.io.FileUtils;
-
 //Unir dos archivos TSV en uno solo
 //Idea de: https://stackoverflow.com/a/18655523
+//Argumentos Ej. "C:\Users\pprie\Desktop\tsv\l1.tsv" "C:\Users\pprie\Desktop\tsv\l2.tsv" "C:\Users\pprie\Desktop\tsv\l3.tsv"
 public class union{
     public static void main(String[] arg) throws Exception {
     	//Archivos
