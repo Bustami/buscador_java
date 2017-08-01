@@ -58,6 +58,7 @@ public class listado
 		String bd = cmd.getOptionValue(in3.getOpt(),"");
 		String dirblacklist;
 		if(bd!=""){
+			//http://www.journaldev.com/875/java-read-file-to-string-example
 			String listado = FileUtils.readFileToString(new File(bd), StandardCharsets.ISO_8859_1);//charset por si tenemos acentos, que es el del sistema
 			dirblacklist = listado.replace("\r\n","|");
 		}
