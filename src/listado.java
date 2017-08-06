@@ -74,7 +74,9 @@ public class listado
 	public static void showFiles(File[] files,String tsv,String mask, String bd) throws FileNotFoundException, IOException, NullPointerException {
 	    for (File file : files) {
 	    	if (file.isDirectory() && ( !file.getName().matches(bd) ) ) {
-	           	showFiles(file.listFiles(),tsv,mask,bd); // volvemos a entrar a la funcion
+	           	//Hacemos funciona mas "verborreica" la funcion
+	    		System.out.println("Dir: "+ file.getName().toString());
+	    		showFiles(file.listFiles(),tsv,mask,bd); // volvemos a entrar a la funcion
 	        } else {
 	        		//Filtro inicial segun mascara de usuario
 	        		if (  file.getName().toLowerCase().matches(".*?\\.("+mask+")$")
@@ -97,6 +99,7 @@ public class listado
             			
 	        		}
 	       		}
+	    	System.out.println("Archivo no requerido (" + file.getName().toString() + "), buscando siguiente.");	
 	    	}
 	    System.out.println("No hay mas carpetas, bajando.");
 	}
